@@ -53,6 +53,10 @@ export class GlobalDataService {
     );
   }
 
+  getGlobalIncRate(){
+    return this.globalData[this.globalData.length - 1].increaseRate;
+  }
+
   getGlobalConfirmed(){
     return this.globalData[this.globalData.length - 1].confirmed;
   }
