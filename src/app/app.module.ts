@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { Ng2GoogleChartsModule } from 'ng2-google-charts';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
@@ -26,6 +26,7 @@ import {BarGraphComponent} from "./components/home-page/bar-graph/bar-graph.comp
     GoogleChartComponent
   ],
   imports: [
+    Ng2GoogleChartsModule,
     BrowserModule,
     AppRoutingModule,
     HttpClientModule
