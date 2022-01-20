@@ -12,6 +12,7 @@ import { DatewiseTableComponent } from './components/countries-page/datewise-tab
 import { GoogleChartComponent } from './components/countries-page/google-chart/google-chart.component';
 import {PieChartComponent} from "./components/home-page/pie-chart/pie-chart.component";
 import {BarGraphComponent} from "./components/home-page/bar-graph/bar-graph.component";
+import { SelectBarComponent } from './components/countries-page/select-bar/select-bar.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import {BarGraphComponent} from "./components/home-page/bar-graph/bar-graph.comp
     PieChartComponent,
     BarGraphComponent,
     DatewiseTableComponent,
-    GoogleChartComponent
+    GoogleChartComponent,
+    SelectBarComponent
   ],
   imports: [
     Ng2GoogleChartsModule,

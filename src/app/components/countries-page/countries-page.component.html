@@ -3,12 +3,19 @@
     <br>
     <h1 class="display-3 font-weight-bold text-dark">CovTrac: Covid-19 Tracker</h1>
     <h5 class="font-weight-bold text-secondary">Showing Countrywide Statistics</h5>
-    <hr class="my-4">
   </div>
-  <app-dashboard [scope]="'Pass country name here'" [data]="'Pass data to be sent here'"></app-dashboard>
+  <app-select-bar></app-select-bar>
+  <hr>
+  <app-dashboard [scope]="'Pass country name here'" [data]="{
+    date: '17-01-2022',
+    country: 'Pakistan',
+    confirmed: 654873,
+    recovered: 75698,
+    deaths: 757
+  }"></app-dashboard>
   <hr>
   <div class="row">
-    <app-bar-graph class="col-sm-6"></app-bar-graph>
-    <app-pie-chart class="col-sm-6"></app-pie-chart>
+    <app-datewise-table class="col-sm-6"></app-datewise-table>
+    <app-google-chart class="col-sm-6"></app-google-chart>
   </div>
 </div>
